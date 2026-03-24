@@ -1,0 +1,14 @@
+ssh-keygen -t ed25519 -C registed@email.com
+ssh-keygen -t rsa -b 4096 -C registed@mail.com
+
+Github - Settings-SSH & GPG keys -New SSH key
+
+ssh -T git@github.com
+
+Management or Modify of SSH-KEYS
+
+ssh-keygen -p -f ~/.ssh/id_ed25519
+
+ssh-keygen -p -f ~/.ssh/id_ed25519
+
+
