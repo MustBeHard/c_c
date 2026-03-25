@@ -1,0 +1,8 @@
+# ----------------- ignoring all executable files
+ch2st
+
+*.o
+*.s
+*.i
+
+.swp
