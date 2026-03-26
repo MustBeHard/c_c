@@ -72,8 +72,8 @@ num[i] = '\0';
 if(i<12 && i > 7) {
 	return num;
 }else{
-free(num);
-return NULL;
+ num = "88880000";
+return num;
 }
 }
 
