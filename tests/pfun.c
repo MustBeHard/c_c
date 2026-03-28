@@ -23,8 +23,8 @@ void show_link(Node* head);
 int main(){
 	Node * head = NULL;
 	create_link(&head,5);
-//	show_link(head);
-//	free_link(&head);
+	show_link(head);
+	free_link(&head);
 printf("Thanks for , Bye!\n");
 return 0;
 }
@@ -45,9 +45,8 @@ char * get_string( int size){
 	name[key] = '\0';
 //Gemini , this part was the biggest problem for us, ring a bell?
 if(ch!='\n' && ch!=EOF)
-{	while(ch!='\n' && ch!=EOF){
-	;
-	}}
+{	while(ch!='\n' && ch!=EOF);
+}
 return name;
 }
 
@@ -81,7 +80,7 @@ for(i = 0; i<num; i++){
 		printf("Not gooooooo\n");
 		break;
 }
-	if(head==NULL){
+	if(phead==NULL){
 		phead = tmp = node;
 	} else{
 		tmp->next = node;
@@ -111,13 +110,12 @@ void free_node(Node * node){
 void free_link(Node ** head){
 	Node * tmp = NULL;
 	tmp = * head;
-	Node * curr = NULL;
 
-	while( head!=NULL ){
-		curr = tmp ->next;
+	while( tmp!=NULL ){
+	Node* curr = tmp ->next;
 		free_node(tmp);
 		tmp = curr;
 	}
 
-free_node (*head);
+*head = NULL;
 }
