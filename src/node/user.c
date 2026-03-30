@@ -18,7 +18,7 @@ char* get_string(int string_size,char * n_type){
 	mystring[num] = '\0';
 
 	if(letter!='\n' && letter!=EOF){
-		while(letter!='\n' && letter!=EOF);
+		while(		(letter = getchar())!='\n' && letter!=EOF);
 	}
 
 return mystring;
@@ -88,16 +88,22 @@ void show_contact(Contact *contact){
 	if(!contact){
 		printf("Something went wrong on contact!\n");
 	}
-	
+
+int i=0;
+	for(i=0;i<contact->count;i++){
+		printf("ID:%d NAME:%s\t MAIL:%s\t DATA:%d\n",contact->index[i]->id,contact->index[i]->username,contact->index[i]->email,contact->index[i]->data);
+		}
+/*	
 	User * head = contact->head;
 	
 	printf("You have %d contacts in ContactBook %d now:\n",contact->count,contact->id);
 	while(head!=NULL){
 	
-		printf("ID:%d\t DATA:%d\t NAME:%s\t MAIL:%s\n",head->id,head->data,head->username,head->email);
+		printf("ID:%d\t DATA:%5d\t NAME:%20s\t MAIL:%s\n",head->id,head->data,head->username,head->email);
 		head=head->next;
 	}
-printf("********************\n");	
+*/
+printf("***The whole list of your contact!***\n");	
 }
 
 
