@@ -1,7 +1,17 @@
 # c_c Practice for C
 
-## ch2st.c 
+struct
 
-struct , node , char , string 
+sort
+
+file 
+
+pointer
+
+function and args
+
+strings and chars
+
+ 
 
 
