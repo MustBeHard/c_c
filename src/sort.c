@@ -85,6 +85,31 @@ void bub(int * arr, int num){
 
 void shell(int * arr, int num){
 
+	int gap, j,i;
+
+	for(gap = num/2;gap>0;gap = gap/2)
+
+		for(i = gap; i<num;i = i+gay)
+
+			j = gap
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 }
