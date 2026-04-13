@@ -1,7 +1,7 @@
 # ----------------- ignoring all executable files
 
 *.o
-*.s
+#*.s
 *.i
 
 .swp
